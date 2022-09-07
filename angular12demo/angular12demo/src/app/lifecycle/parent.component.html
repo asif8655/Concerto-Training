@@ -1,0 +1,12 @@
+<p>parent works!</p>
+<select [(ngModel)]="pcountry" class="form-select mb-5">
+    <option value="country">Select Country</option>
+    <option value="india">India</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+    <option value="ireland">Ireland</option>
+</select>
+<h4>{{emp | json}}</h4>
+<p><input type="text" [(ngModel)]="emp.name" placeholder="Enter employee name"></p>
+<input type="checkbox" [(ngModel)]="enabled" >
+<app-child *ngIf="enabled" [country]="pcountry" [employee]="emp"></app-child>

@@ -1,0 +1,32 @@
+<div class="container">
+    <!-- <div  *ngIf="nos.length > 0 ; else none">
+        <p  *ngFor="let no of nos">{{no}}</p>
+    </div>
+    <ng-template class="container" #none>
+        <h1>No items to display</h1>
+    </ng-template > -->
+
+    <div class="container" *ngIf="employees.length > 0">
+        <div *ngFor="let emp of employees">
+           <app-employee [employee]="emp"></app-employee>
+        </div>
+    </div>
+    <div class="container" *ngIf="employees.length <= 0">
+        <h1>No employees yet joined your company!!!</h1>
+    </div>
+
+    <!-- <h1>List of people</h1>
+    <div *ngFor="let p of people" [ngSwitch]="p.country">
+
+        <div *ngSwitchCase="'UK'" class="text-success">
+            <p>{{p.name}} : {{p.country}}</p>
+        </div>
+        <div *ngSwitchCase="'USA'" class="text-danger">
+            <p>{{p.name}} : {{p.country}}</p>
+        </div>
+        <div *ngSwitchCase="'MARS'" class="text-warning">
+            <p>{{p.name}} : {{p.country}}</p>
+        </div>
+    </div> -->
+
+</div>

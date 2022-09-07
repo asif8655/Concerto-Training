@@ -1,0 +1,16 @@
+<p>pipe works!</p>
+<p ngNonBindable>{{20 | power}}</p>
+<p>20 <sup>4</sup> : {{20 | power :a:4}}</p>
+<hr>
+<p>{{ 1234.56 | currency:'GBP' }}</p>
+<p>{{ 1234.56 | currency:"GBP":true }}</p>
+<hr>
+<p>{{ 3.14159265 | number: '3.1-2' }}</p>
+<p>{{ 3.14159265 | number: '3.1-2' :'fr'}}</p>
+<hr>
+<p>{{bdate | date:'short':'UTC/GMT'}}</p>
+<hr>
+<p>{{ 0.123456 | percent }}</p>
+<p>{{ 0.123456 | percent: '2.1-2' }}</p>
+<p>{{ 0.123456 | percent : "10.4-4" }}</p>
+
