@@ -1,3 +1,4 @@
+import { HtmlParser } from '@angular/compiler';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { emp } from './data/data';
 import { DemoService } from './service/demo.service';
@@ -35,7 +36,7 @@ export class AppComponent {
   employee:any;
   getTodos(){
     console.log('getAllTodos')
-    this.service.getAllTodos().subscribe(data=>console.log(data));
+    this.service.getAllTodos().subscribe(data=>{console.log(data)});
   }
   getTodoById(id:any){
  

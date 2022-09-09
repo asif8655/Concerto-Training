@@ -18,6 +18,15 @@ import { EmpformComponent } from './empform/empform.component';
 import { EmpreactiveformComponent } from './empreactiveform/empreactiveform.component';
 import { ServComponent } from './service/serv.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ObservableComponent } from './observable/observable.component';
+import { EmpeditformComponent } from './empeditform/empeditform.component';
+import { ProfileComponent } from './profile/profile.component';
+
 
 @NgModule({
   declarations: [
@@ -35,12 +44,16 @@ import { HttpClientModule } from '@angular/common/http';
     EmpformComponent,
     EmpreactiveformComponent,
     ServComponent,
+    LoginComponent,
+    ObservableComponent,
+    EmpeditformComponent,
+    ProfileComponent,
     
   ],
   imports: [
     BrowserModule,ReactiveFormsModule,
     AppRoutingModule,FormsModule,
-    HttpClientModule
+    HttpClientModule,MatCardModule,MatInputModule,MatButtonModule,BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

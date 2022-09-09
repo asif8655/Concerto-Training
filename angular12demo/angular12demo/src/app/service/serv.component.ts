@@ -12,12 +12,10 @@ export class ServComponent implements OnInit {
 
   title:string;
 
-  constructor(public service:DemoService, public httpservice:HttpClient) { 
+  constructor(public service:DemoService) { 
     this.title=service.message
   }
-  getAllTodos(){
-    return this.httpservice.get('https://jsonplaceholder.typicode.com/todos')
-  }
+  
   changeTitle(){
     this.service.setMessage(this.title);
   }

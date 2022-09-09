@@ -1,12 +1,13 @@
-<div class="container">
+<div class="container" >
     <div class="main1">
-        <div>
+        <div *ngIf="employee !== null">
             <p>Eid:{{employee.eid}}</p>
             <p>Name:{{employee.ename}}</p>
             <p>Email:{{employee.email}}</p>
             <p>Phone:{{employee.phone}}</p>
             <p>Address:{{employee.address.country}}</p>
-            <ng-content></ng-content>
+            <button (click)="back(employee.eid)">Back</button>
         </div>
+        
     </div>
 </div>

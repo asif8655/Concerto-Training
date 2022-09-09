@@ -1,3 +1,273 @@
 {
-    "empolyees":[{"eid":1,"ename":"Asif"}]
+  "employees": [
+    {
+      "eid": 1,
+      "ename": "shalini",
+      "password": "shalini",
+      "email": "shalini@gmail.com",
+      "phone": "1321312312",
+      "address": {
+        "country": "India",
+        "city": "Delhi",
+        "zipcode": 787878
+      },
+      "id": 1
+    },
+    {
+      "eid": 2,
+      "ename": "shalini123",
+      "password": "shalini123",
+      "email": "shalini1@gmail.com",
+      "phone": "1321312312",
+      "address": {
+        "country": "India",
+        "city": "Delhi",
+        "zipcode": 909090
+      },
+      "id": 2
+    },
+    {
+      "eid": 3,
+      "ename": "shalini123",
+      "password": "shalini123",
+      "email": "shalini2@gmail.com",
+      "phone": "1321312312",
+      "address": {
+        "country": "India",
+        "city": "Delhi",
+        "zipcode": 909090
+      },
+      "id": 3
+    },
+    {
+      "eid": "12",
+      "ename": "Asif8655",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mumbai",
+        "country": "India",
+        "zipcode": "400612"
+      },
+      "id": 4
+    },
+    {
+      "eid": "11",
+      "ename": "asif8765",
+      "email": "asif@gmail.com",
+      "phone": "8766",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "8764"
+      },
+      "id": 5
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 6
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 7
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 8
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 9
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 10
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 11
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 12
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 13
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 14
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 15
+    },
+    {
+      "eid": "9",
+      "ename": "asif8765",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mum",
+        "country": "asdf",
+        "zipcode": "400612"
+      },
+      "id": 16
+    },
+    {
+      "eid": "",
+      "ename": "",
+      "email": "",
+      "phone": "",
+      "address": {
+        "city": "",
+        "country": "",
+        "zipcode": ""
+      },
+      "id": 17
+    },
+    {
+      "eid": "",
+      "ename": "",
+      "email": "",
+      "phone": "",
+      "address": {
+        "city": "",
+        "country": "",
+        "zipcode": ""
+      },
+      "id": 18
+    },
+    {
+      "eid": "",
+      "ename": "",
+      "email": "",
+      "phone": "",
+      "address": {
+        "city": "",
+        "country": "",
+        "zipcode": ""
+      },
+      "id": 19
+    },
+    {
+      "eid": "12",
+      "ename": "Asif8655",
+      "email": "asifshaikhacmelal@gmail.com",
+      "phone": "8108662192",
+      "address": {
+        "city": "mumbai",
+        "country": "India",
+        "zipcode": "400612"
+      },
+      "id": 20
+    },
+    {
+      "eid": "100",
+      "ename": "asdk;fhal;kasdfjl;kj",
+      "email": "alksdjfglk",
+      "phone": "98437",
+      "address": {
+        "city": "asdjkfa",
+        "country": "aksjfd",
+        "zipcode": "30948"
+      },
+      "id": 21
+    }
+  ],
+  "users": [
+    {
+      "username": "abc",
+      "password": "abc123"
+    },
+    {
+      "username": "abcd",
+      "password": "abcd123"
+    },
+    {
+      "username": "abcde",
+      "password": "abcde123"
+    }
+  ]
 }

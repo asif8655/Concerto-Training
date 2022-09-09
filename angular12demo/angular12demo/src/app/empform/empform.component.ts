@@ -1,5 +1,7 @@
 import { Component,EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Employee } from '../model/employee';
+import { EmphttpService } from '../service/emphttp.service';
 
 @Component({
   selector: 'app-empform',
@@ -8,19 +10,21 @@ import { Employee } from '../model/employee';
 })
 export class EmpformComponent implements OnInit {
 
-  employee:Employee;
-  constructor() {
-    this.employee={eid:1,ename:'',email:'',phone:'',address:{country:''}}
+  @Output()
+  empadded:EventEmitter<Employee> = new EventEmitter
+  title:string;
+  constructor(private empservice:EmphttpService,private router:Router) {
+    this.title='';
    }
 
   ngOnInit(): void {
+    this.title="Add Employee"
   }
-  @Output()
-  empadded:EventEmitter<Employee> = new EventEmitter
   saveEmployee(emp:Employee)
   {
-    console.log(emp)
-    this.empadded.emit(emp)
+    // console.log(emp)
+    // this.empadded.emit(emp)
+    this.empservice.addEmployee(emp).subscribe(data=>{console.log(data);this.router.navigate(['/list'])});
     
   }
 }

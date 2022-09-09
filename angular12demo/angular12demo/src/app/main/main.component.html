@@ -1,4 +1,5 @@
 <div class="container">
+    <p>{{selid}}</p>
     <!-- <div  *ngIf="nos.length > 0 ; else none">
         <p  *ngFor="let no of nos">{{no}}</p>
     </div>
@@ -7,8 +8,13 @@
     </ng-template > -->
 
     <div class="container" *ngIf="employees.length > 0">
+        
         <div *ngFor="let emp of employees">
-           <app-employee [employee]="emp"></app-employee>
+           <app-employee [employee]="emp" class="emp">
+            <button (click)="delete(emp)">Delete</button>
+            <button (click)="edit(emp)">Edit</button>
+            <button (click)="view(emp.eid)">View Profile</button>
+           </app-employee>
         </div>
     </div>
     <div class="container" *ngIf="employees.length <= 0">
