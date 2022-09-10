@@ -7,7 +7,6 @@ import {
   FormGroup,
   Validators,
   FormBuilder,
-  FormControl
 } from "@angular/forms";
 
 export class User {
@@ -25,11 +24,11 @@ export class ModelformComponent  {
 
   @Output() loggedIn = new EventEmitter<User>();
   form: FormGroup;
-  empform:FormGroup | null;
+  
 
   constructor(private fb: FormBuilder) {
     this.form = new FormGroup({});
-    this.empform = null;
+    
   }
 
   ngOnInit() { (4)

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -8,6 +10,8 @@ import { ModelformComponent } from './modelform/modelform.component';
 import { PowerPipe } from './pipes/power.pipe';
 import { HoverfocusDirective } from './directive/hoverfocus.directive';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,10 +19,11 @@ import { HoverfocusDirective } from './directive/hoverfocus.directive';
     LoginInputOutputComponent,
     ModelformComponent,
     PowerPipe,
-    HoverfocusDirective
+    HoverfocusDirective,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,FormsModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
