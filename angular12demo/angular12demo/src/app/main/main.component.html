@@ -11,9 +11,9 @@
         
         <div *ngFor="let emp of employees">
            <app-employee [employee]="emp" class="emp">
-            <button (click)="delete(emp)">Delete</button>
-            <button (click)="edit(emp)">Edit</button>
-            <button (click)="view(emp.eid)">View Profile</button>
+            <button (click)="delete(emp)" style="margin-right: 10px;" >Delete</button>
+            <button (click)="edit(emp)" style="margin-right: 10px;">Edit</button>
+            <button (click)="view(emp.eid)" style="margin-right: 10px;">View Profile</button>
            </app-employee>
         </div>
     </div>

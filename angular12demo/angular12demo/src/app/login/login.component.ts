@@ -29,10 +29,11 @@ export class LoginComponent implements OnInit {
       if(resp[0].username === this.username && resp[0].password === this.password)
       {
         localStorage.setItem("username",this.username);
-        this.router.navigate(['/list']);
+        this.router.navigate(['/employee']);
       }
       else{
         this.loginValid = false;
+        
       }
     })
   }

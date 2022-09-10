@@ -5,6 +5,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileinfoComponent } from './profileinfo/profileinfo.component';
+import { AuthService } from './service/auth.service';
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
@@ -12,8 +14,8 @@ const routes: Routes = [
   // {path:'list',component:MainComponent},
   // {path:'list/:id',component:ProfileComponent},
   {path:'register',component:EmpformComponent},
-  {path:'employee',component:MainComponent},
-  {path:'employee/:id',component:ProfileComponent},
+  {path:'employee',component:MainComponent,canActivate:[AuthService]},
+  {path:'employee/:id',component:ProfileComponent,children:[{path:'info',component:ProfileinfoComponent}]},
 ];
 
 @NgModule({

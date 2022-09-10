@@ -11,8 +11,10 @@ import { EmphttpService } from '../service/emphttp.service';
 export class ProfileComponent implements OnInit {
 
   employee:Employee | null;
+  
   constructor(private route:ActivatedRoute,private es:EmphttpService,private router:Router) { 
     this.employee= null;
+    
   }
 
   ngOnInit(): void {
@@ -29,4 +31,7 @@ export class ProfileComponent implements OnInit {
     this.router.navigate(['../'],{relativeTo:this.route, queryParams:{id:eid}})
   }
 
+  displayAddress(){
+    this.router.navigate(['info'],{relativeTo:this.route})
+  }
 }

@@ -17,7 +17,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { EmpformComponent } from './empform/empform.component';
 import { EmpreactiveformComponent } from './empreactiveform/empreactiveform.component';
 import { ServComponent } from './service/serv.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
@@ -26,6 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ObservableComponent } from './observable/observable.component';
 import { EmpeditformComponent } from './empeditform/empeditform.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileinfoComponent } from './profileinfo/profileinfo.component';
+import { TokenService } from './service/token.service';
 
 
 @NgModule({
@@ -48,6 +50,7 @@ import { ProfileComponent } from './profile/profile.component';
     ObservableComponent,
     EmpeditformComponent,
     ProfileComponent,
+    ProfileinfoComponent,
     
   ],
   imports: [
@@ -55,7 +58,11 @@ import { ProfileComponent } from './profile/profile.component';
     AppRoutingModule,FormsModule,
     HttpClientModule,MatCardModule,MatInputModule,MatButtonModule,BrowserAnimationsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [{
+    provide:HTTP_INTERCEPTORS,
+    useClass:TokenService,
+    multi:true
+  }],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

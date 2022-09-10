@@ -6,7 +6,9 @@
             <p>Email:{{employee.email}}</p>
             <p>Phone:{{employee.phone}}</p>
             <p>Address:{{employee.address.country}}</p>
-            <button (click)="back(employee.eid)">Back</button>
+            <button (click)="back(employee.eid)" style="margin-right: 10px;">Back</button>
+            <button (click)="displayAddress()">View Address</button>
+            <router-outlet></router-outlet>
         </div>
         
     </div>
