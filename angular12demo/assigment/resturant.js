@@ -627,4 +627,32 @@ const foodItem = [
     document.getElementById("total-price").innerText = "Total Price : " + sum;
   }
 
-  
+  function removeAllItems() {
+    cartData.length = 0;
+    totalAmount();
+    cartItems();
+    document.getElementById("cart-plus").innerText =
+      " " + cartData.length + " Items";
+    cartele.style.display = "none";
+    foodele.style.display = "block";
+    alert("Currently no items in the cart")
+    unChceked();
+  }
+  /**
+   * Remove all the items from the card
+   */
+  function backPage() {
+    window.history.back();
+    cartele.style.display = "none";
+    foodele.style.display = "block";
+    displaySelect();
+  }
+  /**
+   *  Removed all the checked
+   */
+  function unChceked() {
+    let ele = document.getElementsByName("chk");
+    for (let i = 0; i < ele.length; i++) {
+      if (ele[i].type == "checkbox") ele[i].checked = false;
+    }
+  }

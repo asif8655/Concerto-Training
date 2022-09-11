@@ -72,8 +72,29 @@
             <p class="cart-btn" id="total-price">Total Amount</p>
         </div>
         <div class="btn-box">
-            <button class="cart-btn">Checkout</button>
-        </div>
+            <button
+              class="cart-btn btn btn-success"
+              type="button"
+              data-toggle="modal" data-target="#exampleModal"
+            >
+              Checkout
+            </button>
+            <button
+              class="cart-btn btn btn-danger"
+              onclick="removeAllItems()"
+              id="remove-all"
+            >
+              Remove All
+            </button>
+            <button
+              class="cart-btn btn btn-secondary"
+              onclick="backPage()"
+              id="back-page"
+            >
+              Go Back to List
+            </button>
+          </div>
+    
     </div>
 
     <script src="./resturant.js"></script>
