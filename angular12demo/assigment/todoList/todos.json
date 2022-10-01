@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "atodo": "Tea Making",
+      "id": 1
+    },
+    {
+      "atodo": "Bill Payment",
+      "id": 2
+    },
+    {
+      "atodo": "Book Shopping",
+      "id": 3
+    }
+  ]
+}

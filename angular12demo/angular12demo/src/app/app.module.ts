@@ -14,7 +14,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { HoverDirective } from './directives/hover.directive';
 import { PowerPipe } from './pipe/power.pipe';
 import { PipeComponent } from './pipe/pipe.component';
-import { EmpformComponent } from './empform/empform.component';
+// import { EmpformComponent } from './empform/empform.component';
 import { EmpreactiveformComponent } from './empreactiveform/empreactiveform.component';
 import { ServComponent } from './service/serv.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -43,7 +43,7 @@ import { TokenService } from './service/token.service';
     HoverDirective,
     PowerPipe,
     PipeComponent,
-    EmpformComponent,
+    // EmpformComponent,
     EmpreactiveformComponent,
     ServComponent,
     LoginComponent,

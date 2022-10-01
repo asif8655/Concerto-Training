@@ -13,7 +13,9 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   // {path:'list',component:MainComponent},
   // {path:'list/:id',component:ProfileComponent},
-  {path:'register',component:EmpformComponent},
+  // {path:'register',component:EmpformComponent},
+  {path:'register',loadChildren:()=> import('./lazy-loading/lazy-loading.module')
+  .then(m=>m.LazyLoadingModule)},
   {path:'employee',component:MainComponent,canActivate:[AuthService]},
   {path:'employee/:id',component:ProfileComponent,children:[{path:'info',component:ProfileinfoComponent}]},
 ];

@@ -1,0 +1,18 @@
+{
+    "list":[
+        {
+            "id":1,
+            "Iname":"Tea Making"
+        },
+
+        {
+            "id":2,
+            "Iname":"Bill Payment"
+        },
+
+        {
+            "id":3,
+            "Iname":"Book    Shopping"
+        }
+    ]
+}
