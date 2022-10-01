@@ -1,14 +1,15 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
+import { Todo } from '../model/todo';
 import { TodohttpService } from '../service/todohttp.service';
-import { Todo } from '../todoInterface/todo';
 
 @Component({
-  selector: 'app-add-item',
-  templateUrl: './add-item.component.html',
-  styleUrls: ['./add-item.component.css']
+  selector: 'app-addtodo',
+  templateUrl: './addtodo.component.html',
+  styleUrls: ['./addtodo.component.css']
 })
-export class AddItemComponent implements OnInit {
-
+export class AddtodoComponent implements OnInit {
+  
   constructor(private todoservice: TodohttpService) { }
   
 
