@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -115,6 +116,19 @@ public class HomeController {
 		 return ResponseEntity.of(Optional.of("Not Success"));
 //		return null;
 		
+	}
+	
+	@GetMapping("/emp/{empid}")
+	public ResponseEntity<String> approveLoans(@PathVariable String empid)
+	{
+		try {
+			this.employeeService.approveLoan(empid);
+		}
+		catch(Exception e )
+		{
+			return ResponseEntity.of(Optional.of("Failed to update"));
+		}
+		return ResponseEntity.of(Optional.of("Status Update"));
 	}
 	
 
