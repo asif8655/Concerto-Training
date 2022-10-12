@@ -28,6 +28,7 @@ import { EmpeditformComponent } from './empeditform/empeditform.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileinfoComponent } from './profileinfo/profileinfo.component';
 import { TokenService } from './service/token.service';
+import { PdfdemoComponent } from './pdfdemo/pdfdemo.component';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { TokenService } from './service/token.service';
     EmpeditformComponent,
     ProfileComponent,
     ProfileinfoComponent,
+    PdfdemoComponent,
     
   ],
   imports: [
